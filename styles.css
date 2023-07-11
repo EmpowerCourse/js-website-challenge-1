@@ -110,10 +110,22 @@ textarea {
 
 #navToggle {
   display: block;
+  outline: none;
+  border: none;
 }
 
 #navMenu {
   display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  font-size: 2rem;
+  padding: 16px;
+  margin-top: 88px;
 }
 
 @media screen and (min-width: 680px) {
@@ -123,6 +135,14 @@ textarea {
 
   #navMenu {
     display: flex;
+    flex-direction: row;
+    position: relative;
+    width: auto;
+    height: auto;
+    background: none;
+    font-size: inherit;
+    padding: inherit;
+    margin-top: inherit;
   }
 }
 
